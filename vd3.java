@@ -1,0 +1,20 @@
+import java. io.BufferedReader; 
+import java.io.I0Exception; 
+import java.io.InputStream;
+import java. io.InputStreamReader;
+public class ReadLineDemo {
+public static void main(String[] args) {
+InputStream is = System.in;
+InputStreamReader isr = new InputStreamReader(is);
+BufferedReader br = new BufferedReader (isr);
+while (true) {
+try {
+String line = br. readLine();
+if(line = null) break;
+System.out.println(line);
+} catch (I0Exception e) {
+ System. out. printin(e);
+}
+}
+}
+}
